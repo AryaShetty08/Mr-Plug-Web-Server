@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mr. Plug Application</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+  <h1>Mr. Plug Application</h1>
+  <div id="outlet-buttons">
+    <button class="outlet-button">Turn off Plug 1</button>
+    <button class="outlet-button">Turn off Plug 2</button>
+  </div>
+</header>
+
+<aside>
+  <div id="adaptive-learning">
+    <button id="adaptiveLearningBtn">Enable Adaptive Learning</button>
+  </div>
+  <div id="outlet-settings">
+    <h2>Outlet Settings</h2>
+    <div class="outlet" id="outlet1">
+      <label for="outlet1-on">Outlet 1 ON:</label>
+      <select id="outlet1-on">
+        <!-- Options will be populated by JavaScript -->
+      </select>
+      <label for="outlet1-off">OFF:</label>
+      <select id="outlet1-off">
+        <!-- Options will be populated by JavaScript -->
+      </select>
+      <button class="set-btn">Set</button>
+    </div>
+    <div class="outlet" id="outlet2">
+      <label for="outlet2-on">Outlet 2 ON:</label>
+      <select id="outlet2-on">
+        <!-- Options will be populated by JavaScript -->
+      </select>
+      <label for="outlet2-off">OFF:</label>
+      <select id="outlet2-off">
+        <!-- Options will be populated by JavaScript -->
+      </select>
+      <button class="set-btn">Set</button>
+    </div>
+  </div>
+</aside>
+
+<main>
+  <div id="graph-container">
+    <canvas id="powerGraph"></canvas>
+    <canvas id="tempGraph"></canvas>
+  </div>
+  <div id="leaderboard-button-container">
+    <button id="leaderboardButton">Go to Leaderboard (Coming Soon)</button>
+  </div>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
